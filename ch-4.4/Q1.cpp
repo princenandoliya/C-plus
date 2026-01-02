@@ -97,6 +97,20 @@ public:
 			}
 		}
 	}
+	 void SearchByRoll(int roll)
+	{
+		for (int i = 0; i < students.size(); i++)
+		{
+			if (students[i].GetRoll() == roll)
+			{
+				cout << "Student Found :" << endl;
+				students[i].display();
+				return;
+			}
+		}
+
+		cout << "Student with Roll No " << roll << " not found." << endl;
+	}
 };
 
 int main()
@@ -112,6 +126,8 @@ int main()
 	manager.addStudent(s3);
 
 	manager.displayAllData();
+	
+	manager.SearchByRoll(2);
 
 	return 0;
 }
