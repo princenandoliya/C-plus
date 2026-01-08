@@ -55,7 +55,7 @@ public:
 	}
 
 	void display() override {
-		cout << "\n part time employees";
+		cout << "\n part time employees" <<endl;
 		Employee::display();
 		cout << "Hours Worked: " << hours_worked << endl;
 	   
@@ -107,6 +107,30 @@ int main()
 			emp[count++] = new FullTimeEmployee(id,name,age,salary,bonus);
 			
 		}
+		   else if (Choice == 2)
+        {
+            int id, age;
+            double salary;
+            string name;
+            float hours;
+
+            cout << "Enter Id :";
+            cin >> id;
+
+            cout << "Enter Name :";
+            cin >> name;
+
+            cout << "Enter Age :";
+            cin >> age;
+
+            cout << "Enter Salary :";
+            cin >> salary;
+
+            cout << "Enter hours :";
+            cin >> hours;
+
+            emp[count++] = new PartTimeEmployee(id, name, age, salary, hours);
+        }
 		else if(Choice == 3)
 		{
 			for(int i = 0; i < count; i++)
@@ -126,9 +150,7 @@ int main()
 				{
 					emp[i] = emp[i + 1];
 				}
-			}
-				
-			
+			}			
 			
 		else if(Choice == 5)
 		{
