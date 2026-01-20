@@ -25,6 +25,8 @@ Function Overriding
 Arrays of Objects
 
 Base Class Pointers
+
+
 <img width="1314" height="922" alt="Screenshot 2026-01-20 151342" src="https://github.com/user-attachments/assets/5feefb59-4921-46e8-be44-a78b5a0e3504" />
 
 
@@ -41,6 +43,7 @@ Private data members
 Array of objects
 
 Displays student name and roll number
+
 <img width="645" height="782" alt="Screenshot 2026-01-20 165757" src="https://github.com/user-attachments/assets/6adf7d23-60c3-44fb-a1a4-a3f63b6d294c" />
 
 
